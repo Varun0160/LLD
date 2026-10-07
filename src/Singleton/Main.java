@@ -26,20 +26,23 @@ class demo{
 public class Main {
     public static void main(String[] args) {
         demo d=demo.connect();
+        d.email="dsasds";
+        System.out.println(d.email);
         System.out.println(d);
         demo d1=demo.connect();
         System.out.println(d1);
-        Runnable task = () -> { demo d2 = demo.connect();
-            System.out.println(Thread.currentThread().getName() + " -> " + d2);
-        };
-        Thread thread = new Thread(task);
-        thread.start();
-        Thread thread1 = new Thread(task);
-        thread1.start();
-        Thread thread2 = new Thread(task);
-        thread2.start();
-        Thread thread3 = new Thread(task);
-        thread3.start();
+        System.out.println(d1.email);
+//        Runnable task = () -> { demo d2 = demo.connect();
+//            System.out.println(Thread.currentThread().getName() + " -> " + d2);
+//        };
+//        Thread thread = new Thread(task);
+//        thread.start();
+//        Thread thread1 = new Thread(task);
+//        thread1.start();
+//        Thread thread2 = new Thread(task);
+//        thread2.start();
+//        Thread thread3 = new Thread(task);
+//        thread3.start();
 
 
     }
